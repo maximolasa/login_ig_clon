@@ -7,6 +7,7 @@ header {
     width: 100%;
     position: relative;
     bottom: 10px;
+
     .puntos {
         position: relative;
         font-size: 20px;
@@ -28,7 +29,7 @@ main {
     flex-direction: column;
     align-items: center;
     position: relative;
-    
+
 
     img {
         width: 22vh;
@@ -99,11 +100,15 @@ main {
         font-size: 14px;
         background-color: rgba(87, 189, 236, 0.767);
         color: white;
-        &:hover{
+
+        &:hover {
             background-color: #266cd4;
         }
     }
 
+    .cuenta{
+        display: none;
+    }
     .no--tienes {
         font-size: 15px;
         padding-top: 20px;
@@ -117,17 +122,124 @@ main {
 }
 
 
-footer {
+.footer--mobile {
     position: relative;
     text-align: center;
     color: grey;
     font-size: 14px;
     top: 30vh;
-    
 
-    a{
+
+    a {
         text-decoration: none;
         font-weight: 600;
     }
 
+}
+.footer--lg{
+    display: none;
+}
+
+@media (min-width: 600px) {
+    header {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72vh;
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(224, 211, 211);
+            height: 450px;
+            width: 360px;
+
+          
+
+            img{
+                padding-top: 30px;
+            }
+
+            input{
+                width: 280px;
+                position: relative;
+                bottom: 120px;
+            }
+
+            .logIn{
+                width: 290px;
+                position: relative;
+                bottom: 150px;
+                &:hover{
+                    cursor: pointer;
+                }
+
+            }
+
+            .separador{
+                position: relative;
+                top: 100px;
+            }
+
+
+            .facebook{
+                position: relative;
+                top: 200px;
+                width: 290px;
+                background-color: white;
+                color: black;
+
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: white;
+                }
+            }
+
+            .olvidar{
+                position: relative;
+                top: 30px;
+                width: 200px; 
+                padding-right: 10vh;  
+               
+            }
+            .no--tienes{
+                display: none;
+            }
+
+           
+
+            
+        }
+
+
+        .cuenta{
+            position: absolute;
+            border: 1px solid rgb(224, 211, 211);
+            width: 360px;
+            display: flex;
+            justify-content: center;
+            top: 50vh;
+            height: 40px;
+            padding-top: 20px;
+            a{
+                padding-left: 5px;
+                color: #266cd4;
+
+            }
+           
+        }
+
+        .footer--mobile{
+            display: none;
+        }
+        
+        
+    }
+   
 }

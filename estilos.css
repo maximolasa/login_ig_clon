@@ -86,6 +86,9 @@ main .logIn {
 main .logIn:hover {
   background-color: #266cd4;
 }
+main .cuenta {
+  display: none;
+}
 main .no--tienes {
   font-size: 15px;
   padding-top: 20px;
@@ -95,14 +98,95 @@ main .no--tienes a {
   font-weight: 600;
 }
 
-footer {
+.footer--mobile {
   position: relative;
   text-align: center;
   color: grey;
   font-size: 14px;
   top: 30vh;
 }
-footer a {
+.footer--mobile a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.footer--lg {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: none;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+  }
+  body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(224, 211, 211);
+    height: 450px;
+    width: 360px;
+  }
+  body main img {
+    padding-top: 30px;
+  }
+  body main input {
+    width: 280px;
+    position: relative;
+    bottom: 120px;
+  }
+  body main .logIn {
+    width: 290px;
+    position: relative;
+    bottom: 150px;
+  }
+  body main .logIn:hover {
+    cursor: pointer;
+  }
+  body main .separador {
+    position: relative;
+    top: 100px;
+  }
+  body main .facebook {
+    position: relative;
+    top: 200px;
+    width: 290px;
+    background-color: white;
+    color: black;
+  }
+  body main .facebook:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+  body main .olvidar {
+    position: relative;
+    top: 30px;
+    width: 200px;
+    padding-right: 10vh;
+  }
+  body main .no--tienes {
+    display: none;
+  }
+  body .cuenta {
+    position: absolute;
+    border: 1px solid rgb(224, 211, 211);
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    top: 50vh;
+    height: 40px;
+    padding-top: 20px;
+  }
+  body .cuenta a {
+    padding-left: 5px;
+    color: #266cd4;
+  }
+  body .footer--mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=estilos.css.map */
