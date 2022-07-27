@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+
+    .puntos {
+        position: relative;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .idioma {
+        position: relative;
+        text-align: center;
+        bottom: 4vh;
+        color: grey;
+        font-size: 14px;
+
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 30px;
+
+    img {
+        width: 22vh;
+        padding-bottom: 5vh;
+
+    }
+
+    .facebook {
+        width: 35vh;
+        height: 4.5vh;
+        padding: 3px;
+        border-radius: 3px;
+        border: 0px;
+        background-color: #266cd4;
+        color: white;
+
+        &:hover {
+            background-color: #4680d8;
+        }
+
+    }
+
+
+
+    .separador {
+
+        letter-spacing: -2px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 3vh;
+        margin-top: 30px;
+    }
+
+
+    input {
+        color: grey;
+        font-size: 12px;
+        padding-left: 10px;
+        margin-bottom: 0.5vh;
+        width: 35vh;
+        height: 5vh;
+        border: 1px solid rgb(168, 166, 166);
+        border-radius: 3px;
+    }
+
+    a {
+        text-decoration: none;
+
+        .olvidar {
+            font-size: 15px;
+            left: 8vh;
+            padding-top: 10px;
+            position: relative;
+            text-decoration: none;
+            color: #3f9dc9;
+            padding-bottom: 20px;
+            text-decoration: none;
+
+        }
+    }
+
+    .logIn {
+        width: 35vh;
+        height: 4.5vh;
+        padding: 3px;
+        border-radius: 3px;
+        border: 0px;
+        background-color: rgb(124, 186, 214);
+        color: white;
+        &:hover{
+            background-color: #266cd4;
+        }
+    }
+
+    .no--tienes {
+        font-size: 15px;
+        padding-top: 20px;
+
+        a {
+            color: #3f9dc9;
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+footer {
+    position: relative;
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+    top: 35vh;
+    
+
+    a{
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+}
